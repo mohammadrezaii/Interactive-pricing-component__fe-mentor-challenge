@@ -1,7 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope/Manrope-VariableFont_wght.ttf") format("truetype");
-}
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
 
 :root {
   /* primary colors */
@@ -25,7 +27,115 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   font-family: "Manrope", sans-serif;
   font-size: 15px;
+  font-weight: 600;
+  /* background-color: red; */
 }
+
+.bg-pattern {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.wrapper {
+  padding: 0 1.5rem;
+}
+
+/* header */
+header {
+  text-align: center;
+  padding: 6rem 0;
+  position: relative;
+}
+
+.pattern-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.title {
+  font-weight: 800;
+  color: var(--dark-desaturated-blue);
+  font-size: 22px;
+  padding-bottom: 0.1rem;
+}
+
+.subtitle {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  margin-top: 0.4rem;
+}
+
+/* pricing component */
+
+.pricing-box {
+  background-color: var(--white);
+  width: 100%;
+  max-width: 430px;
+  height: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+.page-viewer-slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-view-value {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.price-per-month {
+  font-weight: 800;
+  font-size: 30px;
+  color: var(--dark-desaturated-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-per-month span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: var(--grayish-blue);
+}
+
+/* price range input */
+
+.price-range-input {
+  overflow: hidden;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: var(--light-grayish-blue);
+}
+
+.price-range-input::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+}
+.price-range-input::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  visibility: visible;
+  cursor: ew-resize;
+  background: #434343;
+  box-shadow: -500px 0 0 500px var(--soft-cyan);
+}
+

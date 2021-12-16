@@ -7,12 +7,58 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | Interactive pricing component</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    
+    <main>
+      <div>
+        <svg
+          class="bg-pattern"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100%"
+          height="449"
+        >
+          <path
+            fill="#F1F5FE"
+            fill-rule="evenodd"
+            d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"
+          />
+        </svg>
+        <section class="wrapper">
+          <header>
+            <svg
+              class="pattern-circle"
+              xmlns="http://www.w3.org/2000/svg"
+              width="146"
+              height="145"
+            >
+              <g fill="none" fill-rule="evenodd" stroke="#CFD8EF">
+                <circle cx="63" cy="82" r="62.5" />
+                <circle cx="105" cy="41" r="40.5" />
+              </g>
+            </svg>
+            <h1 class="title">Simple, traffic-based pricing</h1>
+            <p class="subtitle">
+              Sign-up for our 30-day trial.
+            </p>
+            <p class="subtitle">
+              No credit card required.
+            </p>
+          </header>
+          <div class="pricing-box">
+            <div class="page-viewer-slider">
+              <p class="page-view-value">100k Pageviews</p>
+              <div class="clearfix">
+                <input class="price-range-input" type="range" value="1" min="1" max="5">
+              </div>
+              <p class="price-per-month">$16.00 <span>/month</span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
